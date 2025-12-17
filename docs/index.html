@@ -1,30 +1,249 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Building in progress</title>
+	<title>Atharshlakshmi - Portfolio</title>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<style>
-		body { font-family: 'Geist', system-ui, -apple-system, sans-serif; }
+		body { 
+			font-family: 'JetBrains Mono', monospace; 
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		.timeline::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 8px;
+			bottom: 0;
+			width: 2px;
+			background: #e5e7eb;
+		}
+		.timeline-item {
+			position: relative;
+			padding-left: 20px;
+			padding-bottom: 16px;
+		}
+		.timeline-dot {
+			position: absolute;
+			left: -4px;
+			top: 6px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #f472b6;
+			border: 2px solid white;
+		}
 	</style>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-slate-50 to-slate-100 px-4">
-	<div class="w-full max-w-md bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20 p-8 text-center" role="main" aria-labelledby="title">
-		<h1 id="title" class="text-2xl lg:text-3xl text-pink-400 mb-6 tracking-tight">Building in progress...</h1>
-		<div class="flex gap-4 justify-center flex-wrap">
-			<a href="https://www.linkedin.com/in/atharshlakshmi/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-slate-100 text-black flex items-center justify-center hover:bg-pink-400 hover:text-white transition-all duration-300 hover:scale-110 focus:outline-2 focus:outline-pink-500 focus:outline-offset-2 text-lg">
-				<i class="fab fa-linkedin-in"></i>
-			</a>
-			<a href="https://github.com/atharshlakshmi" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-slate-100 text-black flex items-center justify-center hover:bg-pink-400 hover:text-white transition-all duration-300 hover:scale-110 focus:outline-2 focus:outline-pink-500 focus:outline-offset-2 text-lg">
-				<i class="fab fa-github"></i>
-			</a>
+<body class="bg-white text-slate-800">
+	<!-- Fixed Header -->
+	<header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6">
+			<div class="flex justify-between items-center h-12">
+				<span class="text-base font-semibold">Atharshlakshmi</span>
+				<nav class="hidden sm:flex gap-6 text-sm">
+					<a href="#about" class="text-slate-600 hover:text-pink-400 transition-colors">About</a>
+					<a href="#experience" class="text-slate-600 hover:text-pink-400 transition-colors">Experience</a>
+					<a href="#projects" class="text-slate-600 hover:text-pink-400 transition-colors">Projects</a>
+					<a href="#education" class="text-slate-600 hover:text-pink-400 transition-colors">Education</a>
+				</nav>
+				<button id="mobile-menu-btn" class="sm:hidden text-slate-700">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
 		</div>
-	</div>
+		<div id="mobile-menu" class="hidden sm:hidden bg-white border-t border-slate-200">
+			<div class="px-4 py-2 space-y-1 text-sm">
+				<a href="#about" class="block py-1.5 text-slate-600 hover:text-pink-400">About</a>
+				<a href="#experience" class="block py-1.5 text-slate-600 hover:text-pink-400">Experience</a>
+				<a href="#projects" class="block py-1.5 text-slate-600 hover:text-pink-400">Projects</a>
+				<a href="#education" class="block py-1.5 text-slate-600 hover:text-pink-400">Education</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Content -->
+	<main class="max-w-3xl mx-auto px-4 sm:px-6 pt-20 pb-12">
+		
+		<!-- About Section -->
+		<section id="about" class="mb-12">
+			<div class="flex items-start gap-6 mb-6">
+				<!-- Profile Picture -->
+				<img src="profile.jpg" alt="Atharshlakshmi" class="w-24 h-24 rounded-full object-cover flex-shrink-0 border-2 border-pink-400">
+				<div class="flex-1">
+					<h2 class="text-xl font-semibold mb-2">Atharshlakshmi</h2>
+					<p class="text-sm text-slate-600">
+						Student passionate about AI Safety and Large Language Models.
+					</p>
+				</div>
+			</div>
+			<div class="space-y-3 text-sm text-slate-600">
+				<p>
+					Hi, I’m Lakshmi! I'm a Turing AI Scholar, majoring in Data Science & AI in NTU. 
+					Currently, I'm involved in undergraduate research in video models. With a passion for responsible innovation, my core ambition is to build a career dedicated to contributing directly to the field of AI Safety.
+				</p>
+
+			</div>
+			
+			<!-- Skills -->
+			<div class="mt-6">
+				<h3 class="text-sm font-semibold mb-2">Skills & Technologies</h3>
+				<div class="flex flex-wrap gap-1.5">
+					<span class="px-2.5 py-1 bg-pink-50 text-pink-600 rounded text-xs">PyTorch</span>
+					<span class="px-2.5 py-1 bg-pink-50 text-pink-600 rounded text-xs">Python</span>
+		
+				</div>
+			</div>
+
+			<!-- Contact Links -->
+			<div class="mt-6 flex gap-3 text-sm">
+				<a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" rel="noopener noreferrer" 
+				   class="text-slate-600 hover:text-pink-400 transition-colors">
+					<i class="fab fa-linkedin"></i> LinkedIn
+				</a>
+				<a href="https://github.com/atharshlakshmi" target="_blank" rel="noopener noreferrer"
+				   class="text-slate-600 hover:text-pink-400 transition-colors">
+					<i class="fab fa-github"></i> GitHub
+				</a>
+				<a href="mailto:your.email@example.com" class="text-slate-600 hover:text-pink-400 transition-colors">
+					<i class="fas fa-envelope"></i> Email
+				</a>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="mb-12">
+			<h2 class="text-xl font-semibold mb-4">Experience</h2>
+			<div class="timeline relative">
+				
+				<div class="timeline-item">
+					<span class="timeline-dot"></span>
+					<div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+						<div class="flex-1">
+							<h3 class="text-sm font-semibold">Senior Software Engineer</h3>
+							<p class="text-sm text-pink-400">Company Name</p>
+						</div>
+						<span class="text-xs text-slate-500">Jan 2023 - Present</span>
+					</div>
+					<p class="text-sm text-slate-600 mb-2">
+						Led development of key features for a high-traffic web application serving over 1M users. 
+						Implemented scalable architecture patterns and mentored junior developers.
+					</p>
+					<div class="flex flex-wrap gap-1.5">
+						<span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">React</span>
+						<span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">Node.js</span>
+						<span class="px-2 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">AWS</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="mb-12">
+			<h2 class="text-xl font-semibold mb-4">Projects</h2>
+			<div class="space-y-4">
+				
+				<div class="border border-slate-200 rounded-lg p-4 hover:border-pink-300 transition-colors">
+					<div class="flex items-start gap-4">
+						<div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-500 rounded flex items-center justify-center flex-shrink-0">
+							<i class="fas fa-code text-white text-xl"></i>
+						</div>
+						<div class="flex-1 min-w-0">
+							<h3 class="text-base font-semibold mb-1">Project Name 1</h3>
+							<p class="text-sm text-slate-600 mb-2">
+								A brief description of your project, highlighting the key features and technologies used.
+							</p>
+							<div class="flex flex-wrap gap-1.5 mb-2">
+								<span class="px-2 py-0.5 bg-pink-50 text-pink-600 rounded text-xs">React</span>
+								<span class="px-2 py-0.5 bg-pink-50 text-pink-600 rounded text-xs">API</span>
+							</div>
+							<div class="flex gap-3 text-xs">
+								<a href="#" class="text-pink-400 hover:text-pink-500">
+									<i class="fas fa-external-link-alt"></i> Demo
+								</a>
+								<a href="#" class="text-slate-600 hover:text-slate-700">
+									<i class="fab fa-github"></i> Code
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Education Section -->
+		<section id="education" class="mb-12">
+			<h2 class="text-xl font-semibold mb-4">Education</h2>
+			<div class="timeline relative">
+				
+				<div class="timeline-item">
+					<span class="timeline-dot"></span>
+					<div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+						<div class="flex-1">
+							<h3 class="text-sm font-semibold">Bachelor of Science in Computer Science</h3>
+							<p class="text-sm text-pink-400">University Name</p>
+						</div>
+						<span class="text-xs text-slate-500">2017 - 2021</span>
+					</div>
+					<p class="text-sm text-slate-600 mb-1">
+						Graduated with honors. Focused on software engineering, algorithms, and data structures.
+					</p>
+					<p class="text-sm text-slate-700 font-medium">GPA: 3.8/4.0</p>
+				</div>
+
+				<div class="timeline-item">
+					<span class="timeline-dot"></span>
+					<div class="mb-1">
+						<h3 class="text-sm font-semibold">Certifications & Courses</h3>
+						<p class="text-sm text-pink-400">Online & Professional Development</p>
+					</div>
+					<ul class="text-sm text-slate-600 space-y-1">
+						<li>• AWS Certified Solutions Architect</li>
+						<li>• Full Stack Web Development Specialization</li>
+						<li>• Machine Learning Certificate</li>
+					</ul>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="border-t border-slate-200 py-6">
+		<div class="max-w-3xl mx-auto px-4 sm:px-6 text-center text-xs text-slate-500">
+			<p>© 2025 Atharshlakshmi.</p>
+		</div>
+	</footer>
+
+	<!-- Mobile Menu Script -->
+	<script>
+		const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		
+		mobileMenuBtn.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+		});
+
+		mobileMenu.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', () => {
+				mobileMenu.classList.add('hidden');
+			});
+		});
+
+		document.addEventListener('click', (e) => {
+			if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+				mobileMenu.classList.add('hidden');
+			}
+		});
+	</script>
 </body>
 </html>
-
