@@ -14,11 +14,11 @@ body{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.6;backg
 .tl-item{position:relative;padding-left:20px;padding-bottom:20px}
 .tl-item:last-child{padding-bottom:0}
 .tl-dot{position:absolute;left:-4px;top:6px;width:10px;height:10px;border-radius:50%;background:#f472b6;border:2px solid #fff}
-.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9d174d;margin-bottom:12px;padding:3px 15px;background:#fdf2f8;border-radius:4px;border-left:3px solid #f472b6}
+.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9d174d;margin-bottom:24px;padding:3px 15px;background:#fdf2f8;border-radius:4px;border-left:3px solid #f472b6}
 .card{border:1px solid #e2e8f0;border-radius:8px;padding:16px;transition:border-color .2s,box-shadow .2s;margin-bottom:10px}
 .card:hover{border-color:#f9a8d4;box-shadow:0 2px 12px rgba(244,114,182,.08)}
 .card:last-child{margin-bottom:0}
-.pill{padding:2px 8px;background:#fdf2f8;color:#be185d;border-radius:4px;font-size:10px;display:inline-block;margin:2px 2px 0 0}
+.pill{color:#be185d;display:inline-block;margin:2px 2px 0 0;font-size:10px}
 .pill-g{padding:2px 8px;background:#f1f5f9;color:#475569;border-radius:4px;font-size:10px;display:inline-block;margin:2px 2px 0 0}
 .badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:600;padding:2px 6px;border-radius:4px;background:#fef9c3;color:#854d0e;border:1px solid #fde68a}
 a{text-decoration:none}
@@ -58,15 +58,15 @@ a{text-decoration:none}
       <div style="display:flex;flex-direction:column;gap:6px;font-size:11px">
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:90px;padding-top:2px">Programming</span>
-          <div><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">pandas</span><span class="pill">NumPy</span><span class="pill">scikit-learn</span><span class="pill">PyTorch</span></div>
+          <div style="color:#be185d">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:90px;padding-top:2px">AI</span>
-          <div><span class="pill">Hugging Face</span><span class="pill">LLM APIs</span><span class="pill">RAG</span><span class="pill">Fine-tuning</span></div>
+          <div style="color:#be185d">Hugging Face, LLM APIs, RAG, Fine-tuning</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:90px;padding-top:2px">Tools</span>
-          <div><span class="pill">Git</span><span class="pill">Streamlit</span><span class="pill">FastAPI</span><span class="pill">Docker</span><span class="pill">Jupyter</span></div>
+          <div style="color:#be185d">Git, Streamlit, FastAPI, Docker, Jupyter</div>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@ a{text-decoration:none}
     <div style="display:flex;gap:16px;font-size:12px">
       <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQDkxHCfshKRTrhCDx2A4R4qAWc_lvXZ7eH5rL9UVkPx5UY?e=QHoEyq" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fas fa-file-pdf"></i> Resume</a>
-      <a href="https://github.com/atharshlakshmi" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/atharshlakshmi" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-github" style="font-size:16px"></i> GitHub</a>
     </div>
   </section>
 
@@ -93,7 +93,7 @@ a{text-decoration:none}
           <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2024 – 2028</span>
         </div>
         <p style="font-size:12px;font-weight:500;color:#1e293b;margin-bottom:4px">CGPA: 4.75 / 5.0</p>
-        <p style="font-size:12px;color:#64748b;margin-bottom:4px">Turing AI Scholars Programme (TAISP) — selective cohort for advanced AI research and leadership.</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:4px">Turing AI Scholars Programme (TAISP)</p>
         <p style="font-size:11px;color:#94a3b8">Relevant coursework: Data Structures & Algorithms · Intro to AI · Linear Algebra · Machine Learning</p>
       </div>
 
@@ -134,7 +134,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">Undergraduate Research</p>
-            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Sep 2025 – Present</span>
         </div>
@@ -148,11 +148,11 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">Summer Research Intern</p>
-            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Jun – Jul 2025</span>
         </div>
-        <p style="font-size:12px;color:#f472b6;margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab (ANGEL)</p>
+        <p style="font-size:12px;color:#f472b6;margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab</p>
         <p style="font-size:12px;color:#64748b;margin-bottom:8px">Designed GOALIE — a decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:#1e293b;font-weight:500">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">Experimental Design</span></div>
         </div>
@@ -165,20 +165,20 @@ a{text-decoration:none}
   <section id="projects" style="margin-bottom:48px;scroll-margin-top:80px">
     <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Projects</h2>
 
-    <div style="margin-bottom:24px">
+    <div style="margin-bottom:48px">
       <div class="cat-label"><i class="fas fa-shield-halved" style="font-size:10px"></i> AI Safety & Responsible AI</div>
 
       <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e2e8f0">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">SandbagDetect</p>
-            <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines"></i> Report</a>
+            <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
+            <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines" style="font-size:13px" ></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">Jan 2026</span>
         </div>
         <p style="font-size:11px;color:#94a3b8;margin-bottom:6px">APART Research Sprint</p>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Research on consistency probing to detect LLM sandbagging. Built a framework comparing evaluative vs. casual prompts — <strong style="color:#1e293b;font-weight:500">50 prompt pairs across 7 domains </strong>— using paired statistical tests and effect-size analysis to compute a sandbagging confidence score.</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Research on consistency probing to detect LLM sandbagging.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Statistical Analysis</span><span class="pill-g">Prompt Engineering</span></div>
       </div>
 
@@ -186,11 +186,11 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">Clean Talk — Guardrail API</p>
-            <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">Dec 2025</span>
         </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Two-stage AI safety guardrail system for prompt risk assessment and policy enforcement. Fine-tuned DistilBERT on safety datasets achieving <strong style="color:#1e293b;font-weight:500">82% F1</strong> across six harm categories. Engineered a RAG pipeline with Pinecone + Gemini; deployed via FastAPI and Docker with a Streamlit monitoring dashboard.</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Two-stage AI safety guardrail system for prompt risk assessment and policy enforcement.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">Pandas</span><span class="pill-g">PyTorch</span><span class="pill-g">RAG</span><span class="pill-g">Pinecone</span><span class="pill-g">FastAPI</span><span class="pill-g">Docker</span><span class="pill-g">Streamlit</span></div>
       </div>
     </div>
@@ -204,7 +204,7 @@ a{text-decoration:none}
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <p style="font-size:13px;font-weight:500">AURA</p>
             <span class="badge"><i class="fas fa-star" style="font-size:8px"></i> Finalist</span>
-            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">2026</span>
         </div>
@@ -217,7 +217,7 @@ a{text-decoration:none}
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <p style="font-size:13px;font-weight:500">Common Ground</p>
             <span class="badge"><i class="fas fa-medal" style="font-size:8px"></i> 2nd Place</span>
-            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">2025</span>
         </div>
@@ -229,7 +229,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">NOVA</p>
-            <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">2026</span>
         </div>
@@ -241,7 +241,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:13px;font-weight:500">validO</p>
-            <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:13px"></i></a>
           </div>
           <span style="font-size:11px;color:#94a3b8">2025</span>
         </div>
