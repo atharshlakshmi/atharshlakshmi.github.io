@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atharshlakshmi – AI Safety Portfolio</title>
+<title>Atharshlakshmi – Portfolio</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,7 +14,7 @@ body{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.6;backg
 .tl-item{position:relative;padding-left:20px;padding-bottom:20px}
 .tl-item:last-child{padding-bottom:0}
 .tl-dot{position:absolute;left:-4px;top:6px;width:10px;height:10px;border-radius:50%;background:#f472b6;border:2px solid #fff}
-.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9d174d;margin-bottom:12px;padding:3px 10px;background:#fdf2f8;border-radius:4px;border-left:3px solid #f472b6}
+.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9d174d;margin-bottom:12px;padding:3px 15px;background:#fdf2f8;border-radius:4px;border-left:3px solid #f472b6}
 .card{border:1px solid #e2e8f0;border-radius:8px;padding:16px;transition:border-color .2s,box-shadow .2s;margin-bottom:10px}
 .card:hover{border-color:#f9a8d4;box-shadow:0 2px 12px rgba(244,114,182,.08)}
 .card:last-child{margin-bottom:0}
@@ -22,31 +22,30 @@ body{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.6;backg
 .pill-g{padding:2px 8px;background:#f1f5f9;color:#475569;border-radius:4px;font-size:10px;display:inline-block;margin:2px 2px 0 0}
 .badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:600;padding:2px 6px;border-radius:4px;background:#fef9c3;color:#854d0e;border:1px solid #fde68a}
 a{text-decoration:none}
+@media(max-width:640px){body{font-size:12px}nav{display:none}.header-nav{flex-direction:column;text-align:center}header{flex-direction:column;padding-top:16px!important}header>div{flex-direction:column;text-align:center;gap:12px}h1{font-size:16px}h2{font-size:15px}p{font-size:11px}.tl-item{padding-left:16px}}
 </style>
 </head>
 <body>
 
 <header style="position:sticky;top:0;width:100%;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid #e2e8f0;z-index:50">
-  <div style="max-width:900px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;height:44px">
-    <span style="font-weight:600;font-size:14px">Atharshlakshmi</span>
+  <div style="max-width:800px;margin:0 auto;padding:0 20px;display:flex;justify-content:center;align-items:center;height:44px">
     <nav style="display:flex;gap:20px;font-size:12px">
       <a href="#about" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">About</a>
+	  <a href="#education" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Education</a>
       <a href="#experience" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Experience</a>
       <a href="#projects" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Projects</a>
-      <a href="#education" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Education</a>
     </nav>
   </div>
 </header>
 
-<main style="max-width:900px;margin:0 auto;padding:28px 20px 48px">
+<main style="max-width:800px;margin:0 auto;padding:28px 20px 48px">
 
   <!-- About -->
-  <section id="about" style="margin-bottom:48px;scroll-margin-top:52px">
+  <section id="about" style="margin-bottom:48px;scroll-margin-top:80px">
     <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px">
       <img src="profile.jpg" alt="Lakshmi" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid #f472b6;flex-shrink:0"><div>
         <h1 style="font-size:18px;font-weight:600;margin-bottom:4px">Atharshlakshmi Vijayakumar</h1>
-        <p style="font-size:12px;color:#f472b6;font-weight:500;margin-bottom:6px">Turing AI Scholar · NTU Data Science & AI</p>
-        <p style="font-size:12px;color:#64748b">Student passionate about AI Safety and Large Language Models.</p>
+        <p style="font-size:12px;color:#f472b6;font-weight:500;margin-bottom:6px">NTU Turing AI Scholar</p>
       </div>
     </div>
     <div style="font-size:12px;color:#64748b;line-height:1.7;margin-bottom:20px">
@@ -58,179 +57,29 @@ a{text-decoration:none}
       <p style="font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:10px">Technical Skills</p>
       <div style="display:flex;flex-direction:column;gap:6px;font-size:11px">
         <div style="display:flex;align-items:flex-start;gap:8px">
-          <span style="color:#94a3b8;min-width:50px;padding-top:2px">AI / ML</span>
-          <div><span class="pill">PyTorch</span><span class="pill">Hugging Face</span><span class="pill">scikit-learn</span><span class="pill">RAG</span><span class="pill">Prompt Engineering</span><span class="pill">Model Fine-tuning</span></div>
+          <span style="color:#94a3b8;min-width:90px;padding-top:2px">Programming</span>
+          <div><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">pandas</span><span class="pill">NumPy</span><span class="pill">scikit-learn</span><span class="pill">PyTorch</span></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
-          <span style="color:#94a3b8;min-width:50px;padding-top:2px">Backend</span>
-          <div><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">SQL</span><span class="pill">Docker</span><span class="pill">Streamlit</span></div>
+          <span style="color:#94a3b8;min-width:90px;padding-top:2px">AI</span>
+          <div><span class="pill">Hugging Face</span><span class="pill">LLM APIs</span><span class="pill">RAG</span><span class="pill">Fine-tuning</span></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
-          <span style="color:#94a3b8;min-width:50px;padding-top:2px">Research</span>
-          <div><span class="pill">Literature Review</span><span class="pill">Experimental Design</span><span class="pill">Technical Writing</span></div>
+          <span style="color:#94a3b8;min-width:90px;padding-top:2px">Tools</span>
+          <div><span class="pill">Git</span><span class="pill">Streamlit</span><span class="pill">FastAPI</span><span class="pill">Docker</span><span class="pill">Jupyter</span></div>
         </div>
       </div>
     </div>
 
     <div style="display:flex;gap:16px;font-size:12px">
       <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQDkxHCfshKRTrhCDx2A4R4qAWc_lvXZ7eH5rL9UVkPx5UY?e=QHoEyq" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fas fa-file-pdf"></i> Resume</a>
       <a href="https://github.com/atharshlakshmi" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-github"></i> GitHub</a>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" style="margin-bottom:48px;scroll-margin-top:52px">
-    <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Experience</h2>
-    <div class="tl" style="position:relative">
-
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
-          <div>
-            <p style="font-size:13px;font-weight:500">Fellow — Technical Fellowship</p>
-            <p style="font-size:12px;color:#f472b6">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
-          </div>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Spring 2026</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Completed a structured fellowship covering AI threat models and risk, mechanistic interpretability, scalable oversight and evaluation, robustness and adversarial attacks, and AI governance frameworks.</p>
-      </div>
-
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
-          <div>
-            <p style="font-size:13px;font-weight:500">Undergraduate Researcher — URECA</p>
-            <p style="font-size:12px;color:#f472b6">Nanyang Technological University</p>
-          </div>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Sep 2025 – Present</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Surveying 20+ papers on video diffusion models to identify techniques for temporal and stylistic consistency. Implementing FramePack one-frame inference in PyTorch and documenting findings for research reporting.</p>
-        <div><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">Literature Review</span></div>
-      </div>
-
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
-          <div>
-            <p style="font-size:13px;font-weight:500">Summer Research Intern</p>
-            <p style="font-size:12px;color:#f472b6">Alibaba-NTU Global e-Sustainability CorpLab (ANGEL)</p>
-          </div>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Jun – Jul 2025</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Designed GOALIE — a prompt engineering decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:#1e293b;font-weight:500">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
-        <div><span class="pill-g">Prompt Engineering</span><span class="pill-g">OpenAI API</span><span class="pill-g">Python</span><span class="pill-g">Experimental Design</span></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" style="margin-bottom:48px;scroll-margin-top:52px">
-    <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Projects</h2>
-
-    <div style="margin-bottom:24px">
-      <div class="cat-label"><i class="fas fa-shield-halved" style="font-size:10px"></i> AI Safety & Responsible AI</div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">SandbagDetect</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Jan 2026</span>
-        </div>
-        <p style="font-size:11px;color:#94a3b8;margin-bottom:6px">APART Research Sprint</p>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Research on consistency probing to detect LLM sandbagging. Built a framework comparing evaluative vs. casual prompts — 50 prompt pairs across 7 domains — using paired statistical tests and effect-size analysis to compute a sandbagging confidence score. Identified significant evaluative performance drops across models.</p>
-        <div style="margin-bottom:10px"><span class="pill">LLM APIs</span><span class="pill">Statistical Analysis</span><span class="pill">Prompt Engineering</span><span class="pill">Python</span></div>
-        <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines"></i> Report</a>
-	</div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">Clean Talk — Guardrail API</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Dec 2025</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Two-stage AI safety guardrail system for prompt risk assessment and policy enforcement. Fine-tuned DistilBERT on safety datasets achieving <strong style="color:#1e293b;font-weight:500">82% F1</strong> across six harm categories. Engineered a RAG pipeline with Pinecone + Gemini; deployed via FastAPI and Docker with a Streamlit monitoring dashboard.</p>
-        <div style="margin-bottom:10px"><span class="pill">PyTorch</span><span class="pill">DistilBERT</span><span class="pill">RAG</span><span class="pill">Pinecone</span><span class="pill">FastAPI</span><span class="pill">Docker</span><span class="pill">Streamlit</span></div>
-        <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div style="margin-bottom:24px">
-      <div class="cat-label"><i class="fas fa-flask" style="font-size:10px"></i> Research</div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">FramePack — OneFrame</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2026</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Adapting video diffusion models for image editing. Optimising one-frame inference techniques in PyTorch for consistent visual outputs, building on a survey of 20+ papers on temporal and stylistic consistency in generative video models.</p>
-        <div style="margin-bottom:10px"><span class="pill">PyTorch</span><span class="pill">Video Diffusion</span><span class="pill">Image Editing</span></div>
-        <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">GOALIE</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2025</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Prompt engineering decision-making framework for LLMs in embodied environments. Decomposes goals into subgoals with history summarisation and derailment detection. Achieved 86.67% task completion on ALFWorld benchmarks.</p>
-        <div style="margin-bottom:10px"><span class="pill">LLM Agents</span><span class="pill">Prompt Engineering</span><span class="pill">OpenAI API</span><span class="pill">Python</span></div>
-        <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div>
-      <div>
-      <div class="cat-label"><i class="fas fa-trophy" style="font-size:10px"></i> Hackathon Highlights</div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-            <p style="font-size:13px;font-weight:500">AURA</p>
-            <span class="badge"><i class="fas fa-star" style="font-size:8px"></i> Finalist</span>
-          </div>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2026</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Intent-driven browser designed for accessibility — making browsing intuitive and inclusive through natural language intent parsing.</p>
-        <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-            <p style="font-size:13px;font-weight:500">Common Ground</p>
-            <span class="badge"><i class="fas fa-medal" style="font-size:8px"></i> 2nd Place</span>
-          </div>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2025</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Visual novel for Deaf etiquette education — bridging communication gaps through interactive storytelling.</p>
-        <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">NOVA</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2026</span>
-        </div>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Node-oriented visualization tool for AI in education — helping learners navigate AI concepts through interactive graph-based exploration.</p>
-        <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px">
-          <p style="font-size:13px;font-weight:500">validO</p>
-          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">2025</span>
-        </div>
-        <p style="font-size:11px;color:#94a3b8;margin-bottom:6px">TikTok TechJam 2025</p>
-        <p style="font-size:12px;color:#64748b;margin-bottom:10px">ML system for evaluating Google Local review quality. Trained Logistic Regression + fine-tuned RoBERTa on GoEmotions for emotion-based features.</p>
-        <div style="margin-bottom:10px"><span class="pill">scikit-learn</span><span class="pill">RoBERTa</span><span class="pill">Pandas</span><span class="pill">Few-shot Learning</span></div>
-        <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:11px;color:#94a3b8;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-  </section>
-
   <!-- Education -->
-  <section id="education" style="margin-bottom:48px;scroll-margin-top:52px">
+  <section id="education" style="margin-bottom:48px;scroll-margin-top:80px">
     <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Education</h2>
     <div class="tl" style="position:relative">
 
@@ -262,6 +111,149 @@ a{text-decoration:none}
 
     </div>
   </section>
+
+  <!-- Experience -->
+  <section id="experience" style="margin-bottom:48px;scroll-margin-top:80px">
+    <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Experience</h2>
+    <div class="tl" style="position:relative">
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+          <div>
+            <p style="font-size:13px;font-weight:500">Fellow — Technical Fellowship</p>
+            <p style="font-size:12px;color:#f472b6">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
+          </div>
+          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Spring 2026</span>
+        </div>
+        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Completed a structured fellowship covering AI threat models and risk, mechanistic interpretability, scalable oversight and evaluation, and AI governance frameworks.</p>
+      </div>
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">Undergraduate Research</p>
+            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Sep 2025 – Present</span>
+        </div>
+        <p style="font-size:12px;color:#f472b6;margin-bottom:4px">Nanyang Technological University</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Conducting an extensive literature review on video diffusion models, surveying 20+ papers. Implementing one-frame inference techniques using FramePack to achieve consistent visual outputs and documenting findings for research reporting.</p>
+        <div><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">Literature Review</span></div>
+      </div>
+
+      <div class="tl-item">
+        <span class="tl-dot"></span>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">Summer Research Intern</p>
+            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8;white-space:nowrap">Jun – Jul 2025</span>
+        </div>
+        <p style="font-size:12px;color:#f472b6;margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab (ANGEL)</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:8px">Designed GOALIE — a decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:#1e293b;font-weight:500">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
+        <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">Experimental Design</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" style="margin-bottom:48px;scroll-margin-top:80px">
+    <h2 style="font-size:17px;font-weight:600;margin-bottom:18px">Projects</h2>
+
+    <div style="margin-bottom:24px">
+      <div class="cat-label"><i class="fas fa-shield-halved" style="font-size:10px"></i> AI Safety & Responsible AI</div>
+
+      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e2e8f0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">SandbagDetect</p>
+            <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines"></i> Report</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">Jan 2026</span>
+        </div>
+        <p style="font-size:11px;color:#94a3b8;margin-bottom:6px">APART Research Sprint</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Research on consistency probing to detect LLM sandbagging. Built a framework comparing evaluative vs. casual prompts — <strong style="color:#1e293b;font-weight:500">50 prompt pairs across 7 domains </strong>— using paired statistical tests and effect-size analysis to compute a sandbagging confidence score.</p>
+        <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Statistical Analysis</span><span class="pill-g">Prompt Engineering</span></div>
+      </div>
+
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">Clean Talk — Guardrail API</p>
+            <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">Dec 2025</span>
+        </div>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Two-stage AI safety guardrail system for prompt risk assessment and policy enforcement. Fine-tuned DistilBERT on safety datasets achieving <strong style="color:#1e293b;font-weight:500">82% F1</strong> across six harm categories. Engineered a RAG pipeline with Pinecone + Gemini; deployed via FastAPI and Docker with a Streamlit monitoring dashboard.</p>
+        <div><span class="pill-g">Python</span><span class="pill-g">Pandas</span><span class="pill-g">PyTorch</span><span class="pill-g">RAG</span><span class="pill-g">Pinecone</span><span class="pill-g">FastAPI</span><span class="pill-g">Docker</span><span class="pill-g">Streamlit</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+      <div class="cat-label"><i class="fas fa-trophy" style="font-size:10px"></i> Hackathon Highlights</div>
+
+      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e2e8f0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <p style="font-size:13px;font-weight:500">AURA</p>
+            <span class="badge"><i class="fas fa-star" style="font-size:8px"></i> Finalist</span>
+            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">2026</span>
+        </div>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Browser designed for accessibility, making browsing inclusive through natural language intent parsing.</p>
+        <div><span class="pill-g">TypeScript</span><span class="pill-g">OpenAI API</span><span class="pill-g">Chrome DevTools Protocol</span></div>
+      </div>
+
+      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e2e8f0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <p style="font-size:13px;font-weight:500">Common Ground</p>
+            <span class="badge"><i class="fas fa-medal" style="font-size:8px"></i> 2nd Place</span>
+            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">2025</span>
+        </div>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Visual novel for Deaf etiquette education — bridging communication gaps through interactive storytelling.</p>
+        <div><span class="pill-g">TypeScript</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">Google Gemini</span></div>
+      </div>
+
+      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e2e8f0">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">NOVA</p>
+            <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">2026</span>
+        </div>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">Node-oriented visualization tool for AI in education.</p>
+        <div><span class="pill-g">FastAPI</span><span class="pill-g">TypeScript</span><span class="pill-g">OpenAI API</span><span class="pill-g">Tailwind CSS</span></div>
+      </div>
+
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <p style="font-size:13px;font-weight:500">validO</p>
+            <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:10px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+          <span style="font-size:11px;color:#94a3b8">2025</span>
+        </div>
+        <p style="font-size:11px;color:#94a3b8;margin-bottom:6px">TikTok TechJam 2025</p>
+        <p style="font-size:12px;color:#64748b;margin-bottom:10px">ML system for evaluating Google Local review quality. Trained Logistic Regression + fine-tuned RoBERTa on GoEmotions for emotion-based features.</p>
+        <div><span class="pill-g">Python</span><span class="pill-g">scikit-learn</span><span class="pill-g">Pandas</span><span class="pill-g">PyTorch</span><span class="pill-g">Transformers</span></div>
+      </div>
+    </div>
+
+  </section>
+
+  
 
 </main>
 
