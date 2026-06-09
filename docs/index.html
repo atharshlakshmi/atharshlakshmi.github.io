@@ -10,17 +10,17 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.5;background:#fff;color:#1e293b}
-.tl::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:2px;background:#fce7f3}
+.tl::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:2px;background:#e2e8f0}
 .tl-item{position:relative;padding-left:20px;padding-bottom:20px}
 .tl-item:last-child{padding-bottom:0}
-.tl-dot{position:absolute;left:-4px;top:6px;width:10px;height:10px;border-radius:50%;background:#f472b6;border:2px solid #fff}
-.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9d174d;margin-bottom:24px;padding:3px 15px;background:#fdf2f8;border-radius:4px;border-left:3px solid #f472b6}
+.tl-dot{position:absolute;left:-4px;top:6px;width:10px;height:10px;border-radius:50%;background:#177E89;border:2px solid #fff}
+.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#177E89;margin-bottom:24px;padding:3px 15px;background:#e2e8f0;border-radius:4px;border-left:3px solid #177E89}
 .card{border:1px solid #e2e8f0;border-radius:8px;padding:16px;transition:border-color .2s,box-shadow .2s;margin-bottom:10px}
-.card:hover{border-color:#f9a8d4;box-shadow:0 2px 12px rgba(244,114,182,.08)}
+.card:hover{border-color:#e2e8f0;box-shadow:0 2px 12px rgba(244,114,182,.08)}
 .card:last-child{margin-bottom:0}
-.pill{color:#be185d;display:inline-block;margin:2px 2px 0 0;font-size:14px}
-.pill-g{padding:2px 8px;background:#f1f5f9;color:#475569;border-radius:4px;font-size:14px;display:inline-block;margin:6px 6px 0 0}
-.badge{display:inline-flex;align-items:center;gap:3px;font-size:15px;font-weight:600;padding:2px 6px;border-radius:4px;background:#fef9c3;color:#854d0e;border:1px solid #fde68a}
+.pill{color:#177E89;display:inline-block;margin:2px 2px 0 0;font-size:14px}
+.pill-g{padding:2px 8px;background:#f1f5f9;color:#64748b;border-radius:4px;font-size:14px;display:inline-block;margin:6px 6px 0 0}
+.badge{display:inline-flex;align-items:center;gap:3px;font-size:15px;font-weight:600;padding:2px 6px;border-radius:4px;background:#fef3c7;color:#92400e;border:1px solid #fde68a}
 a{text-decoration:none}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
 @media(max-width:640px){body{font-size:14px}nav{display:none}.header-nav{flex-direction:column;text-align:center}header{flex-direction:column;padding-top:16px!important}header>div{flex-direction:column;text-align:center;gap:12px}h1{font-size:20px}h2{font-size:19px}p{font-size:15px}.tl-item{padding-left:16px}#about>div:first-child{flex-direction:column}#about>div:first-child>div:last-child{display:none}}
@@ -31,10 +31,10 @@ a{text-decoration:none}
 <header style="position:sticky;top:0;width:100%;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid #e2e8f0;z-index:50">
   <div style="max-width:800px;margin:0 auto;padding:0 20px;display:flex;justify-content:center;align-items:center;height:44px">
     <nav style="display:flex;gap:20px;font-size:14px">
-      <a href="#about" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">About</a>
-	  <a href="#education" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Education</a>
-      <a href="#experience" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Experience</a>
-      <a href="#projects" style="color:#64748b" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'">Projects</a>
+      <a href="#about" style="color:#64748b" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'">About</a>
+	  <a href="#education" style="color:#64748b" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'">Education</a>
+      <a href="#experience" style="color:#64748b" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'">Experience</a>
+      <a href="#projects" style="color:#64748b" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'">Projects</a>
     </nav>
   </div>
 </header>
@@ -46,14 +46,14 @@ a{text-decoration:none}
     <div style="display:flex;gap:24px;margin-bottom:20px;align-items:flex-start">
       <div style="flex:1">
         <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px">
-          <img src="profile.jpg" alt="Lakshmi" style="width:120px;height:120px;border-radius:20%;object-fit:cover;border:2px solid #f472b6;flex-shrink:0"><div>
+          <img src="profile.jpg" alt="Lakshmi" style="width:120px;height:120px;border-radius:20%;object-fit:cover;border:2px solid #177E89;flex-shrink:0"><div>
             <h1 style="font-size:20px;font-weight:600;margin-bottom:4px">Atharshlakshmi Vijayakumar</h1>
-            <p style="font-size:14px;color:#f472b6;font-weight:500">NTU Turing AI Scholar</p>
-            <p style="font-size:14px;color:#f472b6;font-weight:500;margin-bottom:6px">Data Science & AI major</p>
+            <p style="font-size:14px;color:#177E89;font-weight:500">NTU Turing AI Scholar</p>
+            <p style="font-size:14px;color:#177E89;font-weight:500;margin-bottom:6px">Data Science & AI major</p>
               <div style="display:flex;gap:12px;font-size:12px">
-                  <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-linkedin" style="font-size:18px"></i></a>
-                  <a href="https://github.com/atharshlakshmi" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fab fa-github" style="font-size:18px"></i></a>
-                  <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQDkxHCfshKRTrhCDx2A4R4qAWc_lvXZ7eH5rL9UVkPx5UY?e=QHoEyq" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#64748b'"><i class="fas fa-file-pdf" style="font-size:15px"></i> Resume</a>
+                  <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'"><i class="fab fa-linkedin" style="font-size:18px"></i></a>
+                  <a href="https://github.com/atharshlakshmi" target="_blank" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'"><i class="fab fa-github" style="font-size:18px"></i></a>
+                  <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQDkxHCfshKRTrhCDx2A4R4qAWc_lvXZ7eH5rL9UVkPx5UY?e=QHoEyq" style="color:#64748b;display:flex;align-items:center;gap:5px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#64748b'"><i class="fas fa-file-pdf" style="font-size:15px"></i> Resume</a>
               </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ a{text-decoration:none}
       
       <!-- Sticky Note Scratchpad -->
       <div style="flex-shrink:0;width:240px">
-        <div style="width:240px;min-height:200px;background:#fef3c7;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,0.1),0 0 0 1px #fde68a;position:relative;transform:rotate(-2deg);padding:14px;font-family:'DM Sans',sans-serif;color:#78350f;font-size:13px;line-height:1.6">
+        <div style="width:240px;min-height:200px;background:#fef3c7;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,0.1),0 0 0 1px #fde68a;position:relative;transform:rotate(-2deg);padding:14px;font-family:'DM Sans',sans-serif;color:#92400e;font-size:13px;line-height:1.6">
           <div style="position:absolute;top:-8px;left:16px;width:20px;height:20px;background:#f59e0b;border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center">
             <i class="fas fa-thumbtack" style="font-size:10px;color:#fff;transform:rotate(-45deg)"></i>
           </div>
@@ -82,12 +82,12 @@ a{text-decoration:none}
       <p style="font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:12px">Featured Projects</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px">
         
-        <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="display:block;text-decoration:none;position:relative;border:1px solid #e2e8f0;border-radius:8px;padding:12px;background:#fafafa;transition:borderColor 0.2s" onmouseover="this.style.borderColor='#f472b6'" onmouseout="this.style.borderColor='#e2e8f0'">
+        <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="display:block;text-decoration:none;position:relative;border:1px solid #e2e8f0;border-radius:8px;padding:12px;background:#fafafa;transition:borderColor 0.2s" onmouseover="this.style.borderColor='#177E89'" onmouseout="this.style.borderColor='#e2e8f0'">
           <p style="font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;padding-right:16px">SandbagDetect</p>
           <p style="font-size:12px;color:#64748b;margin-bottom:0;line-height:1.3">Detecting LLM sandbagging via consistency probing.</p>
         </a>
         
-        <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="display:block;text-decoration:none;position:relative;border:1px solid #e2e8f0;border-radius:8px;padding:12px;background:#fafafa;transition:borderColor 0.2s" onmouseover="this.style.borderColor='#f472b6'" onmouseout="this.style.borderColor='#e2e8f0'">
+        <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="display:block;text-decoration:none;position:relative;border:1px solid #e2e8f0;border-radius:8px;padding:12px;background:#fafafa;transition:borderColor 0.2s" onmouseover="this.style.borderColor='#177E89'" onmouseout="this.style.borderColor='#e2e8f0'">
           <p style="font-size:13px;font-weight:600;color:#1e293b;margin-bottom:6px;padding-right:16px">Clean Talk</p>
           <p style="font-size:12px;color:#64748b;margin-bottom:0;line-height:1.3">AI safety guardrail system for prompt risk assessment.</p>
         </a>
@@ -100,15 +100,15 @@ a{text-decoration:none}
       <div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:100px;padding-top:2px">Programming</span>
-          <div style="color:#be185d">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
+          <div style="color:#177E89">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:100px;padding-top:2px">AI</span>
-          <div style="color:#be185d">Hugging Face, LLM APIs, RAG, Fine-tuning</div>
+          <div style="color:#177E89">Hugging Face, LLM APIs, RAG, Fine-tuning</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:#94a3b8;min-width:100px;padding-top:2px">Tools</span>
-          <div style="color:#be185d">Git, Streamlit, FastAPI, Docker, Jupyter</div>
+          <div style="color:#177E89">Git, Streamlit, FastAPI, Docker, Jupyter</div>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@ a{text-decoration:none}
       <p style="font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:10px">Certification</p>
       <div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
         <div style="display:flex;align-items:flex-start;gap:8px">
-          <div style="color:#be185d">BlueDot Impact Technical AI Safety</div>
+          <div style="color:#177E89">BlueDot Impact Technical AI Safety</div>
         </div>
       </div>
     </div>
@@ -133,13 +133,12 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div>
             <p style="font-size:15px;font-weight:500">B.Comp (Hons) in Data Science and Artificial Intelligence</p>
-            <p style="font-size:14px;color:#f472b6">Nanyang Technological University, Singapore</p>
+            <p style="font-size:14px;color:#177E89">Nanyang Technological University, Singapore</p>
           </div>
           <span style="font-size:15px;color:#94a3b8;white-space:nowrap">2024 – 2028</span>
         </div>
-        <p style="font-size:14px;font-weight:500;color:#1e293b;margin-bottom:4px">CGPA: 4.75 / 5.0</p>
+        <p style="font-size:14px;color:#64748b;margin-bottom:4px">CGPA: 4.75 / 5.0</p>
         <p style="font-size:14px;color:#64748b;margin-bottom:4px">Turing AI Scholars Programme (TAISP)</p>
-        <p style="font-size:15px;color:#94a3b8">Relevant coursework: Data Structures & Algorithms · Intro to AI · Linear Algebra · Machine Learning</p>
       </div>
 
       <div class="tl-item">
@@ -147,11 +146,12 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div>
             <p style="font-size:15px;font-weight:500">GCE A-Levels</p>
-            <p style="font-size:14px;color:#f472b6">Raffles Institution, Singapore</p>
+            <p style="font-size:14px;color:#177E89">Raffles Institution, Singapore</p>
           </div>
           <span style="font-size:15px;color:#94a3b8;white-space:nowrap">2022 – 2023</span>
         </div>
-        <p style="font-size:14px;font-weight:500;color:#1e293b">88.75 / 90 RP</p>
+                <p style="font-size:14px;color:#64748b;margin-bottom:4px">88.75 / 90 RP</p>
+
       </div>
 
     </div>
@@ -167,7 +167,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div>
             <p style="font-size:15px;font-weight:500">Fellow — Technical Fellowship</p>
-            <p style="font-size:14px;color:#f472b6">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
+            <p style="font-size:14px;color:#177E89">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
           </div>
           <span style="font-size:15px;color:#94a3b8;white-space:nowrap">Spring 2026</span>
         </div>
@@ -179,11 +179,11 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">Undergraduate Research</p>
-            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8;white-space:nowrap">Sep 2025 – May 2026</span>
         </div>
-        <p style="font-size:14px;color:#f472b6;margin-bottom:4px">Nanyang Technological University</p>
+        <p style="font-size:14px;color:#177E89;margin-bottom:4px">Nanyang Technological University</p>
         <p style="font-size:14px;color:#64748b;margin-bottom:8px">Conducting an extensive literature review on video diffusion models, surveying 20+ papers. Implementing one-frame inference techniques using FramePack to achieve consistent visual outputs and documenting findings for research reporting.</p>
         <div><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">Literature Review</span></div>
       </div>
@@ -193,11 +193,11 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">Summer Research Intern</p>
-            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8;white-space:nowrap">Jun – Jul 2025</span>
         </div>
-        <p style="font-size:14px;color:#f472b6;margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab</p>
+        <p style="font-size:14px;color:#177E89;margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab</p>
         <p style="font-size:14px;color:#64748b;margin-bottom:8px">Designed GOALIE — a decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:#1e293b;font-weight:500">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">Experimental Design</span></div>
         </div>
@@ -217,8 +217,8 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">SandbagDetect</p>
-            <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
-            <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines" style="font-size:15px" ></i></a>
+            <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fas fa-file-lines" style="font-size:15px" ></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">Jan 2026</span>
         </div>
@@ -231,7 +231,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">Clean Talk — Guardrail API</p>
-            <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">Dec 2025</span>
         </div>
@@ -249,7 +249,7 @@ a{text-decoration:none}
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <p style="font-size:15px;font-weight:500">AURA</p>
             <span class="badge" style="font-size:12px" ><i class="fas fa-star" style="font-size:12px"></i> Finalist</span>
-            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">2026</span>
         </div>
@@ -263,7 +263,7 @@ a{text-decoration:none}
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <p style="font-size:15px;font-weight:500">Common Ground</p>
             <span class="badge" style="font-size:12px" ><i class="fas fa-medal" style="font-size:12px"></i> 2nd Place</span>
-            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">2025</span>
         </div>
@@ -276,7 +276,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">NOVA</p>
-            <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/GlacierBlitz/mlda-dlw-bos-angels" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">2026</span>
         </div>
@@ -289,7 +289,7 @@ a{text-decoration:none}
         <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
           <div style="display:flex;align-items:center;gap:8px">
             <p style="font-size:15px;font-weight:500">validO</p>
-            <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#f472b6'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
+            <a href="https://github.com/atharshlakshmi/validO" target="_blank" style="font-size:14px;color:#94a3b8;display:inline-flex;align-items:center;gap:3px" onmouseover="this.style.color='#177E89'" onmouseout="this.style.color='#94a3b8'"><i class="fab fa-github" style="font-size:15px"></i></a>
           </div>
           <span style="font-size:15px;color:#94a3b8">2025</span>
         </div>
