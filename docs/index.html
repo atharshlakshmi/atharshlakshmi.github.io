@@ -25,16 +25,12 @@
   --text:#1e293b;
   --text-2:#64748b;
   --text-3:#94a3b8;
-  --accent:#177E89;
+  --accent:#3a6db0;
   --border:#e2e8f0;
   --pill-bg:#f1f5f9;
   --card-bg:#fafafa;
   --header-bg:rgba(255,255,255,.97);
-  --shadow:rgba(23,126,137,.10);
-  --note-bg:#fef3c7;
-  --note-border:#fde68a;
-  --note-text:#92400e;
-  --note-pin:#f59e0b;
+  --shadow:rgba(58,109,176,.10);
   --badge-bg:#fef3c7;
   --badge-border:#fde68a;
   --badge-text:#92400e;
@@ -45,16 +41,12 @@
   --text:#ededec;
   --text-2:#a3a3a6;
   --text-3:#6f7074;
-  --accent:#2dd4bf;
+  --accent:#7aa7d4;
   --border:#2c2d31;
   --pill-bg:#26272b;
   --card-bg:#202124;
   --header-bg:rgba(23,24,27,.85);
   --shadow:rgba(0,0,0,.45);
-  --note-bg:#3f320e;
-  --note-border:#6b5518;
-  --note-text:#fcd34d;
-  --note-pin:#f59e0b;
   --badge-bg:#3f2606;
   --badge-border:#78530f;
   --badge-text:#fcd34d;
@@ -64,33 +56,36 @@
   --text:#ededec;
   --text-2:#a3a3a6;
   --text-3:#6f7074;
-  --accent:#2dd4bf;
+  --accent:#7aa7d4;
   --border:#2c2d31;
   --pill-bg:#26272b;
   --card-bg:#202124;
   --header-bg:rgba(23,24,27,.85);
   --shadow:rgba(0,0,0,.45);
-  --note-bg:#3f320e;
-  --note-border:#6b5518;
-  --note-text:#fcd34d;
-  --note-pin:#f59e0b;
   --badge-bg:#3f2606;
   --badge-border:#78530f;
   --badge-text:#fcd34d;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.5;background:var(--bg);color:var(--text);transition:background-color .2s,color .2s}
-.tl::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:2px;background:var(--border)}
-.tl-item{position:relative;padding-left:20px;padding-bottom:20px}
-.tl-item:last-child{padding-bottom:0}
-.tl-dot{position:absolute;left:-4px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
-.cat-label{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;padding:3px 15px;background:var(--pill-bg);border-radius:4px;border-left:3px solid var(--accent)}
 .card{border:1px solid var(--border);border-radius:8px;padding:16px;transition:border-color .2s,box-shadow .2s;margin-bottom:10px}
 .card:hover{border-color:var(--accent);box-shadow:0 2px 12px var(--shadow)}
 .card:last-child{margin-bottom:0}
-.pill{color:var(--accent);display:inline-block;margin:2px 2px 0 0;font-size:14px}
-.pill-g{padding:2px 8px;background:var(--pill-bg);color:var(--text-2);border-radius:4px;font-size:14px;display:inline-block;margin:6px 6px 0 0}
-.badge{display:inline-flex;align-items:center;gap:3px;font-size:15px;font-weight:600;padding:2px 6px;border-radius:4px;background:var(--badge-bg);color:var(--badge-text);border:1px solid var(--badge-border)}
+.pill{color:var(--accent);display:inline-block;margin:2px 2px 0 0;font-size:13px}
+.pill-g{padding:2px 8px;background:var(--pill-bg);color:var(--text-2);border-radius:4px;font-size:13px;display:inline-block;margin:6px 6px 0 0}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--badge-bg);color:var(--badge-text);border:1px solid var(--badge-border)}
+/* Shared type scale for section entries */
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)}
+.entry-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px}
+.entry-titles{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.entry-title{font-size:15px;font-weight:600;color:var(--text)}
+.entry-sub{font-size:14px;color:var(--text-2)}
+.entry-meta{font-size:14px;color:var(--text-3);white-space:nowrap}
+.entry-desc{font-size:14px;color:var(--text-2);line-height:1.55}
+a.gh-link{color:var(--text);text-decoration:none;transition:color .15s}
+a.gh-link:hover{color:var(--accent)}
+.gh-arrow{font-size:.55em;margin-left:2px;color:var(--accent);display:inline-block;font-weight:700;vertical-align:middle;transition:transform .15s}
+a.gh-link:hover .gh-arrow{transform:translate(1px,-1px)}
 a{text-decoration:none}
 /* Link hover states (extracted from inline handlers) */
 .nav-link{color:var(--text-2);transition:color .15s;white-space:nowrap}
@@ -102,14 +97,13 @@ a{text-decoration:none}
 .icon-link:hover{color:var(--accent)}
 .cert-link{color:var(--accent);transition:color .15s}
 .cert-link:hover{color:var(--text-2)}
-.feat-card{display:block;position:relative;border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--card-bg);transition:border-color .2s;cursor:pointer}
-.feat-card:hover{border-color:var(--accent)}
+.feat-card{display:block;position:relative;border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--card-bg);cursor:pointer}
 .feat-card .stretched-link::after{content:"";position:absolute;inset:0;z-index:1}
 .feat-card .top-link{position:relative;z-index:2}
 .theme-toggle{position:absolute;right:20px;background:none;border:none;cursor:pointer;color:var(--text-2);font-size:16px;display:flex;align-items:center;padding:6px;transition:color .15s}
 .theme-toggle:hover{color:var(--accent)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-@media(max-width:640px){body{font-size:14px}header>div{padding:0 42px 0 12px}nav{gap:14px;font-size:13px;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}.theme-toggle{right:8px}h1{font-size:20px}h2{font-size:19px}p{font-size:15px}.tl-item{padding-left:16px}#about>div:first-child{flex-direction:column}#about>div:first-child>div:last-child{display:none}}
+@media(max-width:640px){body{font-size:14px}header>div{padding:0 42px 0 12px}nav{gap:14px;font-size:13px;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}.theme-toggle{right:8px}}
 </style>
 </head>
 <body>
@@ -130,98 +124,74 @@ a{text-decoration:none}
 
   <!-- About -->
   <section id="about" style="margin-bottom:48px;scroll-margin-top:80px">
-    <div style="display:flex;gap:24px;margin-bottom:20px;align-items:flex-start">
-      <div style="flex:1">
-        <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px">
-          <img src="profile.jpg" alt="Atharshlakshmi Vijayakumar" style="width:120px;height:120px;border-radius:20%;object-fit:cover;border:2px solid var(--accent);flex-shrink:0"><div>
-            <h1 style="font-size:20px;font-weight:600;margin-bottom:4px">Atharshlakshmi Vijayakumar</h1>
-            <p style="font-size:14px;color:var(--accent);font-weight:500">NTU Turing AI Scholar</p>
-            <p style="font-size:14px;color:var(--accent);font-weight:500;margin-bottom:6px">Data Science & AI major</p>
-              <div style="display:flex;gap:12px;font-size:12px">
-                  <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" style="font-size:18px"></i></a>
-                  <a href="https://github.com/atharshlakshmi" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github" style="font-size:18px"></i></a>
-                  <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQB8DWCrRIRRQrVSKd1JOoVzAfKZz7qEoyNtEwh3t-xrwPY?e=U8PQtj" class="social-link" aria-label="Resume (PDF)"><i class="fas fa-file-pdf" style="font-size:15px"></i> Resume</a>
-              </div>
-          </div>
-        </div>
-        <div style="font-size:15px;color:var(--text-2);line-height:1.5">
-          <p style="margin-bottom:8px">Hi, I'm <strong style="color:var(--text);font-weight:500">Lakshmi!</strong> My core ambition is to build a career dedicated to <strong style="color:var(--text);font-weight:500">AI Safety and Alignment.</strong> Here, you can find more about my projects and my experience!</p>
+    <div style="margin-bottom:20px">
+      <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px">
+        <img src="profile.jpg" alt="Atharshlakshmi Vijayakumar" style="width:120px;height:120px;border-radius:20%;object-fit:cover;border:2px solid var(--accent);flex-shrink:0"><div>
+          <h1 style="font-size:20px;font-weight:600;margin-bottom:4px">Atharshlakshmi Vijayakumar</h1>
+          <p style="font-size:14px;color:var(--text-2);font-weight:500">NTU Turing AI Scholar</p>
+          <p style="font-size:14px;color:var(--text-2);font-weight:500;margin-bottom:6px">Data Science & AI major</p>
+            <div style="display:flex;gap:12px;font-size:13px">
+                <a href="https://www.linkedin.com/in/atharshlakshmi/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin" style="font-size:18px"></i></a>
+                <a href="https://github.com/atharshlakshmi" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github" style="font-size:18px"></i></a>
+                <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQB8DWCrRIRRQrVSKd1JOoVzAfKZz7qEoyNtEwh3t-xrwPY?e=U8PQtj" class="social-link" aria-label="Resume (PDF)"><i class="fas fa-file-pdf" style="font-size:15px"></i> Resume</a>
+            </div>
         </div>
       </div>
-
-      <!-- Sticky Note Scratchpad -->
-      <div style="flex-shrink:0;width:240px">
-        <div style="width:240px;min-height:200px;background:var(--note-bg);border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,0.1),0 0 0 1px var(--note-border);position:relative;transform:rotate(-2deg);padding:14px;font-family:'DM Sans',sans-serif;color:var(--note-text);font-size:13px;line-height:1.6">
-          <div style="position:absolute;top:-8px;left:16px;width:20px;height:20px;background:var(--note-pin);border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center">
-            <i class="fas fa-thumbtack" style="font-size:10px;color:#fff;transform:rotate(-45deg)"></i>
-          </div>
-          <p style="margin:0 0 10px 0;font-weight:600;color:var(--note-text)"> ✓ currently:</p>
-          <p style="margin:0 0 8px 0;opacity:0.8"> tackling ARENA notebooks, working on AI safety projects</p>
-          <p style="margin:0 0 10px 0;font-weight:600;color:var(--note-text)"> ☆ AI safety interests:</p>
-          <p style="margin:0 0 8px 0;opacity:0.7"> interpretability, evals, scalable oversight</p>
-          <p style="margin:0 0 10px 0;font-weight:600;color:var(--note-text)"> ▸ next goal: AI safety fellowship</p>
-        </div>
+      <div style="font-size:15px;color:var(--text-2);line-height:1.5">
+        <p style="margin-bottom:8px">Hi, I'm <strong style="color:var(--text);font-weight:500">Lakshmi!</strong> I'm building a career dedicated to <strong style="color:var(--text);font-weight:500">AI Safety and Alignment.</strong> </p>
       </div>
     </div>
 
     <!-- Featured / Pinned Section -->
     <div style="margin-bottom:24px">
-      <p style="font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:12px"><i class="fas fa-shield-halved" style="font-size:12px;margin-right:6px"></i>Featured — AI Safety</p>
+      <p class="eyebrow" style="margin-bottom:12px">Selected Projects</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px">
 
         <div class="feat-card">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:4px">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-              <p style="font-size:14px;font-weight:600;color:var(--text)">SandbagDetect</p>
-              <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" class="icon-link stretched-link" aria-label="SandbagDetect GitHub repository"><i class="fab fa-github" style="font-size:14px"></i></a>
+          <div class="entry-head">
+            <div class="entry-titles">
+              <a href="https://github.com/atharshlakshmi/SandbagDetect" target="_blank" class="entry-title gh-link stretched-link">SandbagDetect<span class="gh-arrow">↗</span></a>
               <a href="https://entuedu-my.sharepoint.com/:b:/g/personal/atha0004_e_ntu_edu_sg/IQAKUQK3_4RnS5cPwKrCZ0tvAW3JV6x_mxd2A96Qw8u5WX0?e=O7scvL" target="_blank" class="icon-link top-link" aria-label="SandbagDetect research report (PDF)"><i class="fas fa-file-lines" style="font-size:14px"></i></a>
             </div>
-            <span style="font-size:12px;color:var(--text-3);white-space:nowrap">Jan 2026</span>
           </div>
-          <p style="font-size:12px;color:var(--accent);font-weight:500;margin-bottom:6px">APART Research Sprint</p>
-          <p style="font-size:12px;color:var(--text-2);margin-bottom:8px;line-height:1.4">A consistency-probing method that detects when an LLM strategically underperforms ("sandbagging") on capability evaluations, with a written research report on the findings.</p>
-          <div><span class="pill-g" style="font-size:12px">Python</span><span class="pill-g" style="font-size:12px">PyTorch</span><span class="pill-g" style="font-size:12px">Hugging Face</span><span class="pill-g" style="font-size:12px">Gemini API</span><span class="pill-g" style="font-size:12px">Prompt Engineering</span><span class="pill-g" style="font-size:12px">Statistical Analysis</span></div>
+          <p class="entry-desc" style="margin-bottom:8px">A consistency-probing method that detects when an LLM strategically underperforms ("sandbagging") on capability evaluations, with a written research report on the findings.</p>
+          <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">Statistical Analysis</span></div>
         </div>
 
         <div class="feat-card">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:4px">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-              <p style="font-size:14px;font-weight:600;color:var(--text)">Clean Talk — Guardrail API</p>
-              <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" class="icon-link stretched-link" aria-label="Clean Talk GitHub repository"><i class="fab fa-github" style="font-size:14px"></i></a>
+          <div class="entry-head">
+            <div class="entry-titles">
+              <a href="https://github.com/atharshlakshmi/clean-talk" target="_blank" class="entry-title gh-link stretched-link">Clean Talk — Guardrail API<span class="gh-arrow">↗</span></a>
             </div>
-            <span style="font-size:12px;color:var(--text-3);white-space:nowrap">Dec 2025</span>
           </div>
-          <p style="font-size:12px;color:var(--accent);font-weight:500;margin-bottom:6px">Personal Project</p>
-          <p style="font-size:12px;color:var(--text-2);margin-bottom:8px;line-height:1.4">A two-stage safety guardrail that scores prompt risk and enforces policy before requests reach an LLM — served as a containerised FastAPI service with a RAG-backed policy layer.</p>
-          <div><span class="pill-g" style="font-size:12px">Python</span><span class="pill-g" style="font-size:12px">PyTorch</span><span class="pill-g" style="font-size:12px">DistilBERT</span><span class="pill-g" style="font-size:12px">RAG</span><span class="pill-g" style="font-size:12px">Pinecone</span><span class="pill-g" style="font-size:12px">Gemini</span><span class="pill-g" style="font-size:12px">FastAPI</span><span class="pill-g" style="font-size:12px">Docker</span><span class="pill-g" style="font-size:12px">Streamlit</span></div>
+          <p class="entry-desc" style="margin-bottom:8px">A two-stage safety guardrail that scores prompt risk and enforces policy before requests reach an LLM — served as a containerised FastAPI service with a RAG-backed policy layer.</p>
+          <div><span class="pill-g">Python</span><span class="pill-g">DistilBERT</span><span class="pill-g">RAG</span><span class="pill-g">FastAPI</span></div>
         </div>
 
       </div>
     </div>
 
     <div style="margin-bottom:20px">
-      <p style="font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px">Technical Skills</p>
-      <div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
+      <p class="eyebrow" style="margin-bottom:10px">Technical Skills</p>
+      <div style="display:flex;flex-direction:column;gap:6px;font-size:14px">
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">Programming</span>
-          <div style="color:var(--accent)">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
+          <div style="color:var(--text)">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">AI</span>
-          <div style="color:var(--accent)">Hugging Face, LLM APIs, RAG, Fine-tuning</div>
+          <div style="color:var(--text)">Hugging Face, LLM APIs, RAG, Fine-tuning</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">Tools</span>
-          <div style="color:var(--accent)">Git, Streamlit, FastAPI, Docker, Jupyter</div>
+          <div style="color:var(--text)">Git, Streamlit, FastAPI, Docker, Jupyter</div>
         </div>
       </div>
     </div>
     <div style="margin-bottom:20px">
-      <p style="font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:10px">Certification</p>
-      <div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
-        <div style="display:flex;align-items:flex-start;gap:8px">
-          <div><a class="cert-link" href="https://bluedot.org/certification?id=recmyYDMzcto0lqSL">BlueDot Impact Technical AI Safety</a></div>
-        </div>
+      <p class="eyebrow" style="margin-bottom:10px">Certification</p>
+      <div style="font-size:14px">
+        <a class="cert-link" href="https://bluedot.org/certification?id=recmyYDMzcto0lqSL">BlueDot Impact Technical AI Safety</a>
       </div>
     </div>
 
@@ -229,33 +199,30 @@ a{text-decoration:none}
 
   <!-- Education -->
   <section id="education" style="margin-bottom:48px;scroll-margin-top:80px">
-    <h2 style="font-size:19px;font-weight:600;margin-bottom:18px">Education</h2>
-    <div class="tl" style="position:relative">
+    <h2 style="font-size:18px;font-weight:600;margin-bottom:18px">Education</h2>
+    <div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
           <div>
-            <p style="font-size:15px;font-weight:500">B.Comp (Hons) in Data Science and Artificial Intelligence</p>
-            <p style="font-size:14px;color:var(--accent)">Nanyang Technological University, Singapore</p>
+            <p class="entry-title">B.Comp (Hons) in Data Science and Artificial Intelligence</p>
+            <p class="entry-sub">Nanyang Technological University, Singapore</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">2024 – 2028</span>
+          <span class="entry-meta">2024 – 2028</span>
         </div>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:4px">CGPA: 4.75 / 5.0</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:4px">Turing AI Scholars Programme (TAISP)</p>
+        <p class="entry-desc" style="margin-bottom:4px">CGPA: 4.75 / 5.0</p>
+        <p class="entry-desc">Turing AI Scholars Programme (TAISP)</p>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+      <div>
+        <div class="entry-head">
           <div>
-            <p style="font-size:15px;font-weight:500">GCE A-Levels</p>
-            <p style="font-size:14px;color:var(--accent)">Raffles Institution, Singapore</p>
+            <p class="entry-title">GCE A-Levels</p>
+            <p class="entry-sub">Raffles Institution, Singapore</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">2022 – 2023</span>
+          <span class="entry-meta">2022 – 2023</span>
         </div>
-                <p style="font-size:14px;color:var(--text-2);margin-bottom:4px">88.75 / 90 RP</p>
-
+        <p class="entry-desc">88.75 / 90 RP</p>
       </div>
 
     </div>
@@ -263,60 +230,54 @@ a{text-decoration:none}
 
   <!-- Experience -->
   <section id="experience" style="margin-bottom:48px;scroll-margin-top:80px">
-    <h2 style="font-size:19px;font-weight:600;margin-bottom:18px">Experience</h2>
-    <div class="tl" style="position:relative">
+    <h2 style="font-size:18px;font-weight:600;margin-bottom:18px">Experience</h2>
+    <div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
           <div>
-            <p style="font-size:15px;font-weight:500">Research Intern</p>
-            <p style="font-size:14px;color:var(--accent)">Home Team Science & Technology Agency</p>
+            <p class="entry-title">Research Intern</p>
+            <p class="entry-sub">Home Team Science & Technology Agency</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">May – Jul 2026</span>
+          <span class="entry-meta">May – Jul 2026</span>
         </div>
-        <p style="font-size:14px;color:var(--accent);margin-bottom:4px">3i Team — Robotics, Automation & Unmanned Systems Division</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:8px">Built safety infrastructure for autonomous robot agents: a <strong style="color:var(--text);font-weight:500">5-axis safety constitution</strong> and a multimodal <strong style="color:var(--text);font-weight:500">runtime verifier</strong> that scores robot plans and live execution against it, deployed via FastAPI into the team's planning harness. Built an LLM-driven pipeline to benchmark VLM safety-judgment accuracy.</p>
+        <p class="entry-sub" style="margin-bottom:4px">3i Team — Robotics, Automation & Unmanned Systems Division</p>
+        <p class="entry-desc" style="margin-bottom:8px">Built safety infrastructure for autonomous robot agents: a <strong style="color:var(--text);font-weight:600">5-axis safety constitution</strong> and a multimodal <strong style="color:var(--text);font-weight:600">runtime verifier</strong> that scores robot plans and live execution against it, deployed via FastAPI into the team's planning harness. Built an LLM-driven pipeline to benchmark VLM safety-judgment accuracy.</p>
         <div><span class="pill-g">VLMs</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">FastAPI</span><span class="pill-g">LLM Judge</span><span class="pill-g">AI Safety Evals</span></div>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
           <div>
-            <p style="font-size:15px;font-weight:500">Fellow — Technical Fellowship</p>
-            <p style="font-size:14px;color:var(--accent)">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
+            <p class="entry-title">Fellow — Technical Fellowship</p>
+            <p class="entry-sub">Nanyang AI Safety Hub (ATLAS Curriculum)</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">Spring 2026</span>
+          <span class="entry-meta">Spring 2026</span>
         </div>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:8px">Completed a structured fellowship covering AI threat models and risk, mechanistic interpretability, scalable oversight and evaluation, and AI governance frameworks.</p>
+        <p class="entry-desc" style="margin-bottom:8px">Completed a structured fellowship covering AI threat models and risk, mechanistic interpretability, scalable oversight and evaluation, and AI governance frameworks.</p>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
-          <div style="display:flex;align-items:center;gap:8px">
-            <p style="font-size:15px;font-weight:500">Undergraduate Research</p>
-            <a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" class="icon-link" aria-label="GitHub repository"><i class="fab fa-github" style="font-size:15px"></i></a>
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
+          <div>
+            <p><a href="https://github.com/atharshlakshmi/framepack-oneframe" target="_blank" class="entry-title gh-link">Undergraduate Research<span class="gh-arrow">↗</span></a></p>
+            <p class="entry-sub">Nanyang Technological University</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">Sep 2025 – May 2026</span>
+          <span class="entry-meta">Sep 2025 – May 2026</span>
         </div>
-        <p style="font-size:14px;color:var(--accent);margin-bottom:4px">Nanyang Technological University</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:8px">Conducted an extensive literature review on video diffusion models, surveying 20+ papers. Implemented one-frame inference techniques using FramePack to achieve consistent visual outputs and documenting findings for research reporting.</p>
+        <p class="entry-desc" style="margin-bottom:8px">Conducted an extensive literature review on video diffusion models, surveying 20+ papers. Implemented one-frame inference techniques using FramePack to achieve consistent visual outputs and documenting findings for research reporting.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">FramePack</span><span class="pill-g">Hugging Face</span><span class="pill-g">Literature Review</span></div>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;gap:12px">
-          <div style="display:flex;align-items:center;gap:8px">
-            <p style="font-size:15px;font-weight:500">Summer Research Intern</p>
-            <a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" class="icon-link" aria-label="GitHub repository"><i class="fab fa-github" style="font-size:15px"></i></a>
+      <div>
+        <div class="entry-head">
+          <div>
+            <p><a href="https://github.com/vaisiyabalakrishnan/GOALIE" target="_blank" class="entry-title gh-link">Summer Research Intern<span class="gh-arrow">↗</span></a></p>
+            <p class="entry-sub">Alibaba-NTU Global e-Sustainability CorpLab</p>
           </div>
-          <span style="font-size:15px;color:var(--text-3);white-space:nowrap">Jun – Jul 2025</span>
+          <span class="entry-meta">Jun – Jul 2025</span>
         </div>
-        <p style="font-size:14px;color:var(--accent);margin-bottom:4px">Alibaba-NTU Global e-Sustainability CorpLab</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:8px">Designed GOALIE — a decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:var(--text);font-weight:500">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
+        <p class="entry-desc" style="margin-bottom:8px">Designed GOALIE — a decision-making framework for LLMs in embodied environments, decomposing goals into subgoals with history summarisation and derailment detection. Achieved <strong style="color:var(--text);font-weight:600">86.67% task completion</strong> on ALFWorld benchmarks, outperforming baselines. Co-authored research report.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">LLM Agents</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">ALFWorld</span><span class="pill-g">Experimental Design</span></div>
       </div>
 
@@ -325,49 +286,42 @@ a{text-decoration:none}
 
   <!-- Projects -->
   <section id="projects" style="margin-bottom:48px;scroll-margin-top:80px">
-    <h2 style="font-size:19px;font-weight:600;margin-bottom:18px">Projects</h2>
+    <h2 style="font-size:18px;font-weight:600;margin-bottom:18px">Projects</h2>
 
     <div>
-      <div class="cat-label"><i class="fas fa-trophy" style="font-size:14px"></i> Hackathon Highlights</div>
 
-      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-            <p style="font-size:15px;font-weight:500">AURA</p>
-            <span class="badge" style="font-size:12px"><i class="fas fa-star" style="font-size:12px"></i> Finalist</span>
-            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" class="icon-link" aria-label="GitHub repository"><i class="fab fa-github" style="font-size:15px"></i></a>
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
+          <div class="entry-titles">
+            <a href="https://github.com/GlacierBlitz/AURA" target="_blank" class="entry-title gh-link">AURA<span class="gh-arrow">↗</span></a>
+            <span class="badge"><i class="fas fa-star" style="font-size:11px"></i> Finalist</span>
           </div>
-          <span style="font-size:15px;color:var(--text-3)">2026</span>
+          <span class="entry-meta">2026</span>
         </div>
-        <p style="font-size:15px;color:var(--text-3);margin-bottom:6px">NTU Women In Tech: Beyond Binary</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:10px">Browser designed for accessibility, making browsing inclusive through natural language intent parsing.</p>
+        <p class="entry-desc" style="margin-bottom:10px">Browser designed for accessibility, making browsing inclusive through natural language intent parsing.</p>
         <div><span class="pill-g">Electron</span><span class="pill-g">TypeScript</span><span class="pill-g">React</span><span class="pill-g">Chrome DevTools Protocol</span><span class="pill-g">OpenAI API</span><span class="pill-g">Whisper</span></div>
       </div>
 
-      <div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-            <p style="font-size:15px;font-weight:500">Common Ground</p>
-            <span class="badge" style="font-size:12px"><i class="fas fa-medal" style="font-size:12px"></i> 2nd Place</span>
-            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" class="icon-link" aria-label="GitHub repository"><i class="fab fa-github" style="font-size:15px"></i></a>
+      <div style="margin-bottom:26px">
+        <div class="entry-head">
+          <div class="entry-titles">
+            <a href="https://github.com/klk445445/SignLanguageVisualNovel" target="_blank" class="entry-title gh-link">Common Ground<span class="gh-arrow">↗</span></a>
+            <span class="badge"><i class="fas fa-medal" style="font-size:11px"></i> 2nd Place</span>
           </div>
-          <span style="font-size:15px;color:var(--text-3)">2025</span>
+          <span class="entry-meta">2025</span>
         </div>
-        <p style="font-size:15px;color:var(--text-3);margin-bottom:6px">NTU TAISP Internal Hackathon</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:10px">Visual novel for Deaf etiquette education — bridging communication gaps through interactive storytelling.</p>
+        <p class="entry-desc" style="margin-bottom:10px">Visual novel for Deaf etiquette education — bridging communication gaps through interactive storytelling.</p>
         <div><span class="pill-g">TypeScript</span><span class="pill-g">Prompt Engineering</span><span class="pill-g">Google Gemini</span></div>
       </div>
 
       <div>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
-          <div style="display:flex;align-items:center;gap:8px">
-            <p style="font-size:15px;font-weight:500">validO</p>
-            <a href="https://github.com/atharshlakshmi/validO" target="_blank" class="icon-link" aria-label="GitHub repository"><i class="fab fa-github" style="font-size:15px"></i></a>
+        <div class="entry-head">
+          <div class="entry-titles">
+            <a href="https://github.com/atharshlakshmi/validO" target="_blank" class="entry-title gh-link">validO<span class="gh-arrow">↗</span></a>
           </div>
-          <span style="font-size:15px;color:var(--text-3)">2025</span>
+          <span class="entry-meta">2025</span>
         </div>
-        <p style="font-size:15px;color:var(--text-3);margin-bottom:6px">TikTok TechJam</p>
-        <p style="font-size:14px;color:var(--text-2);margin-bottom:10px">ML system for evaluating Google Local review quality. Trained Logistic Regression + fine-tuned RoBERTa on GoEmotions for emotion-based features.</p>
+        <p class="entry-desc" style="margin-bottom:10px">ML system for evaluating Google Local review quality. Trained Logistic Regression + fine-tuned RoBERTa on GoEmotions for emotion-based features.</p>
         <div><span class="pill-g">Python</span><span class="pill-g">scikit-learn</span><span class="pill-g">PyTorch</span><span class="pill-g">RoBERTa</span><span class="pill-g">Transformers</span><span class="pill-g">Feature Engineering</span></div>
       </div>
     </div>
@@ -376,7 +330,7 @@ a{text-decoration:none}
 
 </main>
 
-<footer style="border-top:1px solid var(--border);padding:20px;text-align:center;font-size:15px;color:var(--text-3)">
+<footer style="border-top:1px solid var(--border);padding:20px;text-align:center;font-size:14px;color:var(--text-3)">
   © 2026 Atharshlakshmi Vijayakumar.
 </footer>
 
