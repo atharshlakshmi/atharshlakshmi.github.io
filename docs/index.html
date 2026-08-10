@@ -72,8 +72,9 @@ body{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5;background:
 .card:hover{border-color:var(--accent);box-shadow:0 2px 12px var(--shadow)}
 .card:last-child{margin-bottom:0}
 .pill{color:var(--accent);display:inline-block;margin:2px 2px 0 0;font-size:13px}
-.pill-g{padding:2px 8px;background:var(--pill-bg);color:var(--text-2);border-radius:4px;font-size:13px;display:inline-block;margin:6px 6px 0 0}
-.badge{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--badge-bg);color:var(--badge-text);border:1px solid var(--badge-border)}
+.pill-g{color:var(--text-3);font-size:13px}
+.pill-g:not(:last-child)::after{content:" · ";color:var(--text-3)}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--text-2)}
 /* Shared type scale for section entries */
 .eyebrow{font-size:18px;font-weight:600;color:var(--accent)}
 .entry-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px}
@@ -84,7 +85,7 @@ body{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5;background:
 .entry-desc{font-size:14px;color:var(--text-2);line-height:1.55}
 a.gh-link{color:var(--text);text-decoration:none;transition:color .15s}
 a.gh-link:hover{color:var(--accent)}
-.gh-arrow{font-size:.55em;margin-left:2px;color:var(--accent);display:inline-block;font-weight:700;vertical-align:middle;transition:transform .15s}
+.gh-arrow{font-size:.85em;margin-left:3px;color:var(--accent);display:inline-block;font-weight:700;vertical-align:middle;transition:transform .15s}
 a.gh-link:hover .gh-arrow{transform:translate(1px,-1px)}
 a{text-decoration:none}
 /* Link hover states (extracted from inline handlers) */
@@ -97,7 +98,8 @@ a{text-decoration:none}
 .icon-link:hover{color:var(--accent)}
 .cert-link{color:var(--text);transition:color .15s}
 .cert-link:hover{color:var(--accent)}
-.feat-card{display:block;position:relative;border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--card-bg);cursor:pointer}
+.feat-card{display:block;position:relative;border:1px solid var(--border);border-radius:8px;padding:12px;background:var(--card-bg);cursor:pointer;transition:border-color .2s}
+.feat-card:hover{border-color:var(--accent)}
 .feat-card .stretched-link::after{content:"";position:absolute;inset:0;z-index:1}
 .feat-card .top-link{position:relative;z-index:2}
 .theme-toggle{position:absolute;right:20px;background:none;border:none;cursor:pointer;color:var(--text-2);font-size:16px;display:flex;align-items:center;padding:6px;transition:color .15s}
@@ -155,7 +157,7 @@ a{text-decoration:none}
             </div>
           </div>
           <p class="entry-desc" style="margin-bottom:8px">A consistency-probing method that detects when an LLM strategically underperforms ("sandbagging") on capability evaluations, with a written research report on the findings.</p>
-          <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">Statistical Analysis</span></div>
+          <div><span class="pill-g">Python</span><span class="pill-g">LLM APIs</span><span class="pill-g">Hugging Face</span><span class="pill-g">Statistical Analysis</span></div>
         </div>
 
         <div class="feat-card">
@@ -165,18 +167,18 @@ a{text-decoration:none}
             </div>
           </div>
           <p class="entry-desc" style="margin-bottom:8px">A two-stage safety guardrail that scores prompt risk and enforces policy before requests reach an LLM — served as a containerised FastAPI service with a RAG-backed policy layer.</p>
-          <div><span class="pill-g">Python</span><span class="pill-g">DistilBERT</span><span class="pill-g">RAG</span><span class="pill-g">FastAPI</span></div>
+          <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">DistilBERT</span><span class="pill-g">LLM Finetuning</span><span class="pill-g">FastAPI</span></div>
         </div>
 
       </div>
     </div>
 
     <div style="margin-bottom:20px">
-      <p class="eyebrow" style="margin-bottom:10px">Technical Skills</p>
+      <p class="eyebrow" style="margin-bottom:10px">Skills & Certification</p>
       <div style="display:flex;flex-direction:column;gap:6px;font-size:14px">
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">Programming</span>
-          <div style="color:var(--text)">Python, SQL, pandas, NumPy, scikit-learn, PyTorch</div>
+          <div style="color:var(--text)">Python, pandas, NumPy, scikit-learn, PyTorch</div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:8px">
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">AI</span>
@@ -186,12 +188,10 @@ a{text-decoration:none}
           <span style="color:var(--text-3);min-width:100px;padding-top:2px">Tools</span>
           <div style="color:var(--text)">Git, Streamlit, FastAPI, Docker, Jupyter</div>
         </div>
-      </div>
-    </div>
-    <div style="margin-bottom:20px">
-      <p class="eyebrow" style="margin-bottom:10px">Certification</p>
-      <div style="font-size:14px">
-        <a class="cert-link" href="https://bluedot.org/certification?id=recmyYDMzcto0lqSL">BlueDot Impact Technical AI Safety</a>
+        <div style="display:flex;align-items:flex-start;gap:8px">
+          <span style="color:var(--text-3);min-width:100px;padding-top:2px">Certification</span>
+          <div><a class="cert-link" href="https://bluedot.org/certification?id=recmyYDMzcto0lqSL">BlueDot Impact Technical AI Safety</a></div>
+        </div>
       </div>
     </div>
 
@@ -210,11 +210,8 @@ a{text-decoration:none}
           </div>
           <span class="entry-meta">2024 – 2028</span>
         </div>
-        <p class="entry-desc" style="margin-bottom:4px">CGPA: 4.75 / 5.0</p>
-        <p class="entry-desc">Turing AI Scholars Programme (TAISP)</p>
       </div>
 
-      <div>
         <div class="entry-head">
           <div>
             <p class="entry-title">GCE A-Levels</p>
@@ -222,8 +219,7 @@ a{text-decoration:none}
           </div>
           <span class="entry-meta">2022 – 2023</span>
         </div>
-        <p class="entry-desc">88.75 / 90 RP</p>
-      </div>
+
 
     </div>
   </section>
@@ -265,7 +261,7 @@ a{text-decoration:none}
           <span class="entry-meta">Sep 2025 – May 2026</span>
         </div>
         <p class="entry-desc" style="margin-bottom:8px">Conducted literature review on video diffusion models, surveying 20+ papers. Implemented one-frame inference techniques using FramePack to achieve consistent visual outputs and documenting findings for research reporting.</p>
-        <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">FramePack</span><span class="pill-g">Hugging Face</span><span class="pill-g">Literature Review</span></div>
+        <div><span class="pill-g">Python</span><span class="pill-g">PyTorch</span><span class="pill-g">Video Diffusion Models</span><span class="pill-g">FramePack</span><span class="pill-g">Literature Review</span></div>
       </div>
 
       <div>
