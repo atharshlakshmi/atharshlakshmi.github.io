@@ -58,7 +58,7 @@ body{font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5;background:
 .entry-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px}
 .entry-titles{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .entry-title{font-size:14px;font-weight:600;color:var(--text)}
-.entry-sub{font-size:14px;color:var(--text-2)}
+.entry-sub{font-size:14px;font-weight:600;color:var(--text-2)}
 .entry-meta{font-size:14px;color:var(--text-3);white-space:nowrap}
 .entry-desc{font-size:14px;color:var(--text-2);line-height:1.55}
 a.gh-link{color:var(--text);text-decoration:none;transition:color .15s}
